@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Calculator</title>
+  <link href="./style.css" rel="stylesheet">
+  <script src="./script.js" defer></script>
+</head>
+<body>
+  <div class="calculator-grid">
+    <div class="output">
+      <div id="display1" class="previous-operand"></div>
+      <div id="display2" class="current-operand"></div>
+    </div>
+    <button onclick="clearDisplay(true)"class="span-two">AC</button>
+    <button onclick="clearDisplay()">DEL</button>
+    <button id="/" onclick="getButtonValue('/')" >/</button>
+    <button id="1" onclick="getButtonValue('1')">1</button>
+    <button id="2" onclick="getButtonValue('2')">2</button>
+    <button id="3" onclick="getButtonValue('3')">3</button>
+    <button id="*" onclick="getButtonValue('*')">*</button>
+    <button id="4" onclick="getButtonValue('4')">4</button>
+    <button id="5" onclick="getButtonValue('5')">5</button>
+    <button id="6" onclick="getButtonValue('6')">6</button>
+    <button id="+" onclick="getButtonValue('+')">+</button>
+    <button id="7" onclick="getButtonValue('7')">7</button>
+    <button id="8" onclick="getButtonValue('8')">8</button>
+    <button id="9" onclick="getButtonValue('9')">9</button>
+    <button id="-" onclick="getButtonValue('-')">-</button>
+    <button id="." onclick="getButtonValue('.')">.</button>
+    <button id="0" onclick="getButtonValue('0')">0</button>
+    <button onclick="calculate()" class="span-two">=</button>
+  </div>
+</body>
+</html>
